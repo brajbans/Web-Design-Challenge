@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Web Design Challenge</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../Web-Design-Challenge.github.io/Assets/CSS/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="../Web-Design-Challenge.github.io/index.html">Latitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">           
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="../Web-Design-Challenge\Visualisations\Latitude_Vs_Temperature_Plot.html">Temperature</a>
+            <a class="dropdown-item" href="../Web-Design-Challenge\Visualisations\Latitude_Vs_Humidity_Plot.html">Humidity</a>
+            <a class="dropdown-item" href="../Web-Design-Challenge\Visualisations\Latitude_Vs_Cloudiness_Plot.html">Cloudiness</a>
+            <a class="dropdown-item" href="../Web-Design-Challenge\Visualisations\Latitude_Vs_Wind_Speed_Plot.html">Wind Speed</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Web-Design-Challenge\comparisons.html">Comparison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Web-Design-Challenge\data.html">Data</a>
+        </li>
+      </ul>
+    </div>
+  </nav> 
+  
+
+<!-- Container with light background -->
+
+<div class="container px-5 bg-white">
+  <div class="row gx-5 bg-white">
+    <div class="col bg-white">
+      <div class="Comp container-fluid  py-3 my-3 bg-white">
+        <h1 style="color:#17a2b8;">Comparison: Latitude vs X</h1><hr> 
+          <p>Click any plot to get an in-depth analysis.</p>
+    </div>
+  </div>
+</div>
+<div class="Comp1 container">
+  <div class="row">
+    <div class="col">
+      <h3 style="color:#17a2b8;" class="text-center">vs. Temperature</h3>
+      <img  onclick="location.href='../Web-Design-Challenge\Visualisations\Latitude_Vs_Temperature_Plot.html';" src="..\Web-Design-Challenge\Assets\images\Latitude_Vs_Temperature_Plot.png"  alt="Lat_vs_Temp"></div>
+    <div class="col">
+      <h3 style="color:#17a2b8;" class="text-center">vs. Humidity</h3>
+      <img   onclick="location.href='../Web-Design-Challenge\Visualisations\Latitude_Vs_Humidity_Plot.html';"src="..\Web-Design-Challenge\Assets\images\Latitude_Vs_Humidity_Plot.png"  alt="Lat_vs_Humidity"></div>
+    <div class="w-100"></div>
+    <div class="col">
+      <h3 style="color:#17a2b8;" class="text-center">vs. Cloudiness</h3>
+      <img   onclick="location.href='../Web-Design-Challenge\Visualisations\Latitude_Vs_Cloudiness_Plot.html';"src="..\Web-Design-Challenge\Assets\images\Latitude_Vs_Cloudiness_Plot.png"  alt="Lat_vs_Cloudiness"></div>
+    <div class="col">
+      <h3 style="color:#17a2b8;" class="text-center">vs. Wind Speed</h3>
+      <img   onclick="location.href='../Web-Design-Challenge\Visualisations\Latitude_Vs_Wind_Speed_Plot.html';"src="..\Web-Design-Challenge\Assets\images\Latitude_Vs_Wind_Speed_Plot.png"  alt="Lat_vs_WindSpeed">  </div>
+  </div>
+</div>
+
+</body>     
+
+</html>
